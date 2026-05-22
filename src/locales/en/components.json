@@ -44,7 +44,8 @@
     "renameTerminal": "Rename Terminal",
     "moveToRight": "Move to Right Panel",
     "moveToBottom": "Move to Bottom Panel",
-    "mcpServers": "MCP Servers"
+    "mcpServers": "MCP Servers",
+    "git": "Git"
   },
   "sessionChanges": {
     "loadingChanges": "Loading changes...",
@@ -131,6 +132,35 @@
     "openSession": "Open session in this worktree",
     "resetWorktreeAction": "Reset worktree",
     "removeWorktreeAction": "Remove worktree"
+  },
+  "gitPanel": {
+    "noBranch": "No branch",
+    "commitPlaceholder": "Commit message (Ctrl+Enter to commit)",
+    "commit": "Commit",
+    "committing": "Committing...",
+    "committed": "Committed successfully",
+    "failedToCommit": "Failed to commit",
+    "push": "Push",
+    "pushTooltip": "Push to remote",
+    "pushed": "Pushed successfully",
+    "failedToPush": "Failed to push",
+    "pull": "Pull",
+    "pullTooltip": "Pull from remote",
+    "pulled": "Pulled successfully",
+    "failedToPull": "Failed to pull",
+    "stageFile": "Stage file",
+    "stageSelected": "Stage Selected",
+    "stageAll": "Stage All",
+    "staging": "Staging...",
+    "staged": "Staged successfully",
+    "failedToStage": "Failed to stage",
+    "unstageSelected": "Unstage",
+    "unstaging": "Unstaging...",
+    "unstaged": "Unstaged successfully",
+    "failedToUnstage": "Failed to unstage",
+    "loadingChanges": "Loading changes...",
+    "noChanges": "No changes in working tree",
+    "recentCommits": "Recent Commits"
   },
   "toast": {
     "clearAll": "Clear all"

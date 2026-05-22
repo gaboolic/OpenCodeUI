@@ -16,6 +16,7 @@ import {
   PlugIcon,
   TeachIcon,
   GitWorktreeIcon,
+  GitBranchIcon,
 } from './Icons'
 import { layoutStore, useLayoutStore, type PanelTab, type PanelPosition, type PanelTabType } from '../store/layoutStore'
 import { updatePtySession } from '../api/pty'
@@ -42,6 +43,7 @@ const TAB_ICONS: Record<PanelTabType, React.ReactNode> = {
   mcp: <PlugIcon size={12} />,
   skill: <TeachIcon size={12} />,
   worktree: <GitWorktreeIcon size={12} />,
+  git: <GitBranchIcon size={12} />,
 }
 
 // Tab 显示名称
@@ -68,6 +70,8 @@ function getTabLabel(tab: PanelTab, tabs: PanelTab[], t: (key: string) => string
       return t('panelContainer.skills')
     case 'worktree':
       return t('panelContainer.worktrees')
+    case 'git':
+      return t('panelContainer.git')
     default:
       return t('panelContainer.tab')
   }
@@ -476,6 +480,18 @@ export const PanelContainer = memo(function PanelContainer({
                 <GitWorktreeIcon size={12} />
               </span>
               {t('panelContainer.worktrees')}
+            </button>
+            <button
+              onClick={() => {
+                layoutStore.addGitTab(position)
+                setAddMenuPos(null)
+              }}
+              className="w-full flex items-center gap-2 px-2.5 py-1.5 text-left text-[length:var(--fs-sm)] text-text-200 hover:bg-bg-200/60 hover:text-text-100 rounded-md transition-colors"
+            >
+              <span className="opacity-60 shrink-0">
+                <GitBranchIcon size={12} />
+              </span>
+              {t('panelContainer.git')}
             </button>
           </div>,
           document.body,

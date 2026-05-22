@@ -44,7 +44,8 @@
     "renameTerminal": "重命名终端",
     "moveToRight": "移动到右侧面板",
     "moveToBottom": "移动到底部面板",
-    "mcpServers": "MCP 服务器"
+    "mcpServers": "MCP 服务器",
+    "git": "Git"
   },
   "sessionChanges": {
     "loadingChanges": "加载变更中...",
@@ -130,6 +131,35 @@
     "openSession": "在此 Worktree 中打开会话",
     "resetWorktreeAction": "重置 Worktree",
     "removeWorktreeAction": "移除 Worktree"
+  },
+  "gitPanel": {
+    "noBranch": "无分支",
+    "commitPlaceholder": "提交信息 (Ctrl+Enter 提交)",
+    "commit": "提交",
+    "committing": "提交中...",
+    "committed": "提交成功",
+    "failedToCommit": "提交失败",
+    "push": "推送",
+    "pushTooltip": "推送到远程",
+    "pushed": "推送成功",
+    "failedToPush": "推送失败",
+    "pull": "拉取",
+    "pullTooltip": "从远程拉取",
+    "pulled": "拉取成功",
+    "failedToPull": "拉取失败",
+    "stageFile": "暂存",
+    "stageSelected": "暂存选中",
+    "stageAll": "暂存全部",
+    "staging": "暂存中...",
+    "staged": "暂存成功",
+    "failedToStage": "暂存失败",
+    "unstageSelected": "取消暂存",
+    "unstaging": "取消暂存中...",
+    "unstaged": "取消暂存成功",
+    "failedToUnstage": "取消暂存失败",
+    "loadingChanges": "加载变更中...",
+    "noChanges": "工作区无变更",
+    "recentCommits": "最近提交"
   },
   "toast": {
     "clearAll": "清除全部"
